@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:background="#FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+
+        <RelativeLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/song_name"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Dookudu"
+            android:textColor="#000"
+            android:textSize="17sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnPlay"
+                    android:text="play"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnPause"
+                    android:text="pause"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btnResume"
+                    android:text="resume"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <TextView
+        android:id="@+id/textCaption"
+        android:layout_above="@+id/layoutMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="What's your current mood?"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_margin="32dp"
+       />
+
+
+    <View
+        android:id="@+id/fakeView"
+
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/layoutMain"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_top"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnHappy"
+            android:gravity="center"
+            android:text="Happy"
+            android:onClick="playHappySongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_middle"
+            android:layout_below="@+id/layout_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnAngry"
+                android:text="Angry"
+                android:onClick="playAngrySongs"
+                android:layout_alignParentLeft="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnSad"
+                android:text="Sad"
+                android:onClick="playSadSongs"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_bottom"
+            android:layout_below="@+id/layout_middle"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnNeutral"
+                android:text="Neutral"
+                android:onClick="playNeutralSongs"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
